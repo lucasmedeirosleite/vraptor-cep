@@ -12,7 +12,7 @@
 
 	<developers>
 		<developer>
-			<id>aspmedeiros</id>
+			<id>lucasmedeirosleite</id>
 			<name>Lucas Medeiros Leite</name>
 			<email>lucastoc@gmail.com</email>
 		</developer>
@@ -54,9 +54,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>br.com.caelum.vraptor</groupId>
-			<artifactId>vraptor-restfulie-client</artifactId>
-			<version>1.0.0</version>
+			<groupId>br.com.caelum</groupId>
+			<artifactId>restfulie</artifactId>
+			<version>1.0.1</version>
 		</dependency>
 
 		<dependency>

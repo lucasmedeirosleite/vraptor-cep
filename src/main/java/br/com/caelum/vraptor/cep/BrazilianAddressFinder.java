@@ -1,5 +1,7 @@
 package br.com.caelum.vraptor.cep;
 
+import javax.annotation.PostConstruct;
+
 import br.com.caelum.restfulie.Response;
 import br.com.caelum.restfulie.RestClient;
 import br.com.caelum.restfulie.RestfulieException;
@@ -19,8 +21,11 @@ public class BrazilianAddressFinder implements AddressFinder {
 	private DefaultAddress address;
 	
 	public BrazilianAddressFinder(RestClient restfulie){
-		super();
 		this.restfulie = restfulie;
+	}
+	
+	@PostConstruct
+	public void setUp(){
 		restfulie.getMediaTypes().register(new XmlMediaType().withTypes(DefaultAddress.class));
 	}
 	
