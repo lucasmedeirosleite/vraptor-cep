@@ -1,14 +1,13 @@
 package br.com.caelum.restfulie;
 
-import br.com.caelum.vraptor.ioc.ApplicationScoped;
-import br.com.caelum.vraptor.ioc.Component;
-import br.com.caelum.vraptor.ioc.ComponentFactory;
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Produces;
 
-@Component
+
 @ApplicationScoped
-public class RestClientGenerator implements ComponentFactory<RestClient>{
+public class RestClientGenerator {
 
-	@Override
+	@Produces
 	public RestClient getInstance() {
 		return Restfulie.custom();
 	}
