@@ -4,7 +4,7 @@
 
 	<groupId>br.com.caelum.vraptor</groupId>
 	<artifactId>vraptor-cep</artifactId>
-	<version>1.0.0</version>
+	<version>4.0.0-RC2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>vraptor-cep</name>
@@ -49,7 +49,14 @@
 		<dependency>
 			<groupId>br.com.caelum</groupId>
 			<artifactId>vraptor</artifactId>
-			<version>3.4.0</version>
+			<version>4.0.0-RC2</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.weld.servlet</groupId>
+			<artifactId>weld-servlet</artifactId>
+			<version>2.1.2.Final</version>
 			<scope>compile</scope>
 		</dependency>
 
@@ -65,14 +72,14 @@
 			<version>4.8.2</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-all</artifactId>
 			<version>1.1</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
