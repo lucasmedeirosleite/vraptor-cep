@@ -10,7 +10,7 @@ No pom fica
 		<dependency>
 			<groupId>br.com.caelum.vraptor</groupId>
 			<artifactId>vraptor-cep</artifactId>
-			<version>1.0.0</version>
+			<version>4.0.0-RC2-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
 		
@@ -22,11 +22,12 @@ Nenhuma configuração é necessária
 
 		import br.com.caelum.vraptor.cep.AddressFinder;
 		
-		@Resource
+		@Controller
 		public class MeuController {
 			
 			private AddressFinder finder;
 		
+			@Inject
 			public MeuController(AddressFinder finder) {
 				this.finder = finder;
 			}
