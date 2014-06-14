@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.7
+version = '4.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'br.com.caelum:vraptor:4.0.0.Final'
+    compile 'org.jboss.weld.servlet:weld-servlet-core:2.2.1.Final'
+    compile 'br.com.caelum:restfulie:1.0.1'
+    testCompile 'junit:junit:4.8.2'
+    testCompile 'org.hamcrest:hamcrest-all:1.1'
+    testCompile 'org.mockito:mockito-all:1.8.5'
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.groupId = 'br.com.caelum.vraptor'
+        pom.artifactId = 'vraptor-cep'
+        pom.version = '4.0.0'
+    }
+}
